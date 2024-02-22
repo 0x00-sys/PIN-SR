@@ -1,0 +1,162 @@
+﻿/* Shop.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Gray color from Login.css */
+}
+
+/* Styles for the navbar */
+.navbar {
+    background-color: #222; /* Darker gray */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 16px;
+}
+
+.navbar a {
+    display: block;
+    color: #ddd; /* Lighter gray */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #444; /* Medium gray */
+    color: white;
+}
+
+.navbar .navbar-header {
+    display: block;
+    color: #ddd; /* Lighter gray */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+form {
+    max-width: 600px;
+    margin: 100px auto; /* Increased top and bottom margin to push form down */
+    background-color: rgba(100, 100, 100, 0.8); /* Darker gray color from Login.css */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px; /* Increased border radius for a more rounded look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow for more depth */
+    color: #fff; /* Text color changed to white */
+}
+
+input[type="text"],
+input[type="button"] {
+    width: 100%;
+    padding: 10px; /* Reduced padding to decrease size */
+    margin-bottom: 20px; /* Increased margin for more space between inputs */
+    box-sizing: border-box;
+    border-radius: 5px; /* Added border radius for a more rounded look */
+    border: none; /* Removed border */
+    font-size: 1em; /* Reduced font size to match Login.css */
+}
+
+/* Style for Save button */
+input[type="button"] {
+    background-color: #e74c3c; /* Same as delete button */
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px; /* Same as delete button */
+    transition: background-color 0.3s ease; /* Same as delete button */
+}
+
+input[type="button"]:hover {
+    background-color: #d66256; /* Same as delete button */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.gridview-container {
+    margin-top: 20px;
+}
+
+/* Style for GridView */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Added box shadow for depth */
+    border-radius: 10px; /* Added border radius for a more modern look */
+    overflow: hidden; /* To ensure border radius applies to all child elements */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em; /* Increased font size for better visibility */
+    color: #333; /* Changed font color to white for better visibility */
+}
+
+tr:nth-child(even) {
+    background-color: #e8e8e8; /* Lighter gray for better contrast */
+}
+
+tr:nth-child(odd) {
+    background-color: #d0d0d0; /* Darker gray for better contrast */
+}
+
+tr:hover {
+    background-color: #bbb; /* Even darker gray for better contrast */
+    color: #fff; /* Changed font color to white for better visibility */
+}
+
+/* Style for Delete button in GridView */
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px; /* Added border radius for a more modern look */
+    transition: background-color 0.3s ease; /* Added transition for a smoother color change */
+}
+
+.delete-button:hover {
+    background-color: #d66256;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 15px;
+}
+
+/* Styles for the footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

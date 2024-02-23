@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 60px 0 0 0; /* Add top padding to prevent content from being hidden under the navbar */
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    color: #354458;
+    padding: 20px 0;
+}
+
+p {
+    line-height: 1.6em;
+    color: #666;
+}
+
+/* Styles for the navbar */
+.navbar {
+    background-color: #222; /* Darker gray */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 16px;
+}
+
+.navbar a {
+    display: block;
+    color: #ddd; /* Lighter gray */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #444; /* Medium gray */
+    color: white;
+}
+
+.navbar .navbar-header {
+    display: block;
+    color: #ddd; /* Lighter gray */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* Styles for the footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #000; /* Change this to black */
+    text-align: center;
+    padding: 10px 0;
+}
